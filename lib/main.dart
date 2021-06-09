@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+import 'package:foodfit/routes.dart';
+import 'package:foodfit/screens/splash/splash_screen.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'FoodFit',
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
+    );
+  }
+}
